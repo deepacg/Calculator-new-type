@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class='heading'>New type calculator</h1>
+    <div class="content">
+        <input id="text1" type="text" value=0>
+        
+        <div class="row">
+            <button class="button-clr" onclick="clearScr()">C</button>
+            
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="buttonClick(7)">7</button>
+            <button class="button" onclick="buttonClick(8)">8</button>
+            <button class="button" onclick="buttonClick(9)">9</button>
+            <button class="button" onclick="operatorClick('/')">/</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="buttonClick(4)">4</button>
+            <button class="button" onclick="buttonClick(5)">5</button>
+            <button class="button" onclick="buttonClick(6)">6</button>
+            <button class="button" onclick="operatorClick('*')">x</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="buttonClick(1)">1</button>
+            <button class="button" onclick="buttonClick(2)">2</button>
+            <button class="button" onclick="buttonClick(3)">3</button>
+            <button class="button" onclick="operatorClick('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="pointClick('.')">.</button>
+            <button class="button" onclick="buttonClick(0)">0</button>
+            <button class="button" onclick="equalsClick()">=</button>
+            <button class="button" onclick="operatorClick('+')">+</button>
+        </div>
+    </div>
+    
+</body>
+</html>
